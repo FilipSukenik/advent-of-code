@@ -10,7 +10,7 @@ import sk.finishersaapps.filip.advent.of.code.year2021.day01to05.day03.wrapper.B
 public class Processor03 extends Processor {
 
     @Override
-    public void process0() throws IOException {
+    public void firstTask() throws IOException {
 
         List<String> lines = getLines("year21/03/input.txt");
         int charsCount = lines.get(0).length();
@@ -36,7 +36,7 @@ public class Processor03 extends Processor {
     }
 
     @Override
-    public void process1() throws IOException {
+    public void secondTask() throws IOException {
 
         List<String> globalLines = getLines("year21/03/input.txt");
 

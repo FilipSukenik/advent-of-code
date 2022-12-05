@@ -9,26 +9,18 @@ import java.util.List;
 
 public class Processor22_02 extends Processor {
     @Override
-    public void process0() throws IOException {
+    public void firstTask() throws IOException {
         List<String> lines = getLines("year22/02/test.txt");
 
-        int sum = 0;
-        for (String line : lines) {
-            Round round = new Round(line);
-            sum += round.resolve();
-        }
+        int sum = lines.stream().map(Round::new).mapToInt(Round::resolve).sum();
 
         System.out.println(sum);
     }
 
     @Override
-    public void process1() throws IOException {
+    public void secondTask() throws IOException {
         List<String> lines = getLines("year22/02/test.txt");
-        int sum = 0;
-        for (String line : lines) {
-            Round round = new EncryptedRound(line);
-            sum += round.resolve();
-        }
+        int sum = lines.stream().map(EncryptedRound::new).mapToInt(Round::resolve).sum();
 
         System.out.println(sum);
     }

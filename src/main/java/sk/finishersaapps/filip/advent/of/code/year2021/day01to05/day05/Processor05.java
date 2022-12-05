@@ -9,7 +9,7 @@ import sk.finishersaapps.filip.advent.of.code.common.Processor;
 public class Processor05 extends Processor {
 
     @Override
-    public void process0() throws IOException {
+    public void firstTask() throws IOException {
 
         List<Edge01> edges = readEdges("year21/05/input.txt");
         int size = findMax(edges) + 1;
@@ -66,7 +66,7 @@ public class Processor05 extends Processor {
     }
 
     @Override
-    public void process1() throws IOException {
+    public void secondTask() throws IOException {
 
         List<Edge01> edges = readEdges("year21/05/input.txt");
         int size = findMax(edges) + 1;

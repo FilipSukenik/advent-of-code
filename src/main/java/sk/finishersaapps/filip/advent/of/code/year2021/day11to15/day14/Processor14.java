@@ -10,7 +10,7 @@ import sk.finishersaapps.filip.advent.of.code.common.Processor;
 public class Processor14 extends Processor {
 
     @Override
-    public void process0() throws IOException {
+    public void firstTask() throws IOException {
 
         List<String> lines = getLines("year21/14/test.txt");
 
@@ -70,7 +70,7 @@ public class Processor14 extends Processor {
     }
 
     @Override
-    public void process1() throws IOException {
+    public void secondTask() throws IOException {
 
         List<String> lines = getLines("year21/14/input.txt");
 

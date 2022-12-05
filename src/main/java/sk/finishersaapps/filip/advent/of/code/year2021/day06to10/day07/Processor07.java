@@ -9,7 +9,7 @@ import sk.finishersaapps.filip.advent.of.code.common.Processor;
 public class Processor07 extends Processor {
 
     @Override
-    public void process0() throws IOException {
+    public void firstTask() throws IOException {
 
         List<String> lines = getLines("year21/07/input.txt");
         List<Submarine07> submarines = new ArrayList<>();
@@ -39,7 +39,7 @@ public class Processor07 extends Processor {
     }
 
     @Override
-    public void process1() throws IOException {
+    public void secondTask() throws IOException {
         List<String> lines = getLines("year21/07/input.txt");
         List<Submarine07> submarines = new ArrayList<>();
         for (String line : lines) {

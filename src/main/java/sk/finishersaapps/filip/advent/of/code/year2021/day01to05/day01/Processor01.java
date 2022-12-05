@@ -7,7 +7,7 @@ import sk.finishersaapps.filip.advent.of.code.common.Processor;
 
 public class Processor01 extends Processor {
 
-    public void process0() throws IOException {
+    public void firstTask() throws IOException {
 
         int count = 0;
         int previousValue = -1;
@@ -32,7 +32,7 @@ public class Processor01 extends Processor {
         System.out.println("Number of increases = " + count);
     }
 
-    public void process1() throws IOException {
+    public void secondTask() throws IOException {
 
         int count = 0;
         int previousValue = -1;

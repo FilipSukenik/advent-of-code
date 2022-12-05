@@ -9,7 +9,7 @@ import java.util.List;
 
 public class Processor22_01 extends Processor {
     @Override
-    public void process0() throws IOException {
+    public void firstTask() throws IOException {
         List<String> lines = getLines("year22/01/test.txt");
         List<Integer> values = new ArrayList<>();
         int i = 0;
@@ -31,7 +31,7 @@ public class Processor22_01 extends Processor {
     }
 
     @Override
-    public void process1() throws IOException {
+    public void secondTask() throws IOException {
         List<String> lines = getLines("year22/01/test.txt");
         List<Integer> values = new ArrayList<>();
         int i = 0;

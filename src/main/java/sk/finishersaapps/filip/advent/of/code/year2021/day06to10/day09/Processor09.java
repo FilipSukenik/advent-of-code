@@ -8,7 +8,7 @@ import sk.finishersaapps.filip.advent.of.code.common.Processor;
 public class Processor09 extends Processor {
 
     @Override
-    public void process0() throws IOException {
+    public void firstTask() throws IOException {
 
         List<String> lines = getLines("year21/09/input.txt");
         Map09 map = new Map09(lines);
@@ -22,7 +22,7 @@ public class Processor09 extends Processor {
     }
 
     @Override
-    public void process1() throws IOException {
+    public void secondTask() throws IOException {
 
         List<String> lines = getLines("year21/09/input.txt");
         LowPointMap09 map = new LowPointMap09(lines);

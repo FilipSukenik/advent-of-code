@@ -10,9 +10,9 @@ public abstract class Processor {
 
     private static final String RESOURCES_PATH = "./src/main/resources/";
 
-    public abstract void process0() throws IOException;
+    public abstract void firstTask() throws IOException;
 
-    public abstract void process1() throws IOException;
+    public abstract void secondTask() throws IOException;
 
     protected List<String> getLines(String path) throws IOException {
 

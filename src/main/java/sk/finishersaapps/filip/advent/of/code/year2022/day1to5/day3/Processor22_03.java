@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 
 public class Processor22_03 extends Processor {
     @Override
-    public void process0() throws IOException {
+    public void firstTask() throws IOException {
         List<String> lines = getLines("year22/03/test.txt");
 
         int sum = lines.stream().map(line -> new Rucksack(line).findValueOfSame())
@@ -17,7 +17,7 @@ public class Processor22_03 extends Processor {
     }
 
     @Override
-    public void process1() throws IOException {
+    public void secondTask() throws IOException {
         List<String> lines = getLines("year22/03/test.txt");
 
         int sum = 0;

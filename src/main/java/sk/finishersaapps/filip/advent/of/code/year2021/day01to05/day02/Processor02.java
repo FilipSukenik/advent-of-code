@@ -14,7 +14,7 @@ import sk.finishersaapps.filip.advent.of.code.year2021.day01to05.day02.command.U
 public class Processor02 extends Processor {
 
     @Override
-    public void process0() throws IOException {
+    public void firstTask() throws IOException {
 
         Map<String, Command02> commandMap = new HashMap<>();
         commandMap.put("forward", new ForwardCommand02());
@@ -34,7 +34,7 @@ public class Processor02 extends Processor {
     }
 
     @Override
-    public void process1() throws IOException {
+    public void secondTask() throws IOException {
         Map<String, Command02> commandMap = new HashMap<>();
         commandMap.put("forward", new ForwardCommand02());
         commandMap.put("up", new UpCommand02());
