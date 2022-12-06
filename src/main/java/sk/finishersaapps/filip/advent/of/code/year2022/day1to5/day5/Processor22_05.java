@@ -19,7 +19,8 @@ public class Processor22_05 extends Processor {
         Collections.reverse(boxesLines);
 
         OptionalInt maxOpt = Arrays.stream(
-                        boxesLines.get(0).strip().replaceAll("\\s+", " ").split(" "))
+                        boxesLines.get(0).strip().replaceAll("\\s+", " ")
+                                .split(" "))
                 .mapToInt(Integer::parseInt)
                 .max();
 
