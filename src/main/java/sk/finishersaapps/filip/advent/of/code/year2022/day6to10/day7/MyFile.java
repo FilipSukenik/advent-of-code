@@ -2,6 +2,7 @@ package sk.finishersaapps.filip.advent.of.code.year2022.day6to10.day7;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -104,12 +105,28 @@ public class MyFile {
                 .flatMap(file -> file.getAllDirsWithMinSize(minSize).stream())
                 .collect(Collectors.toList());
 
-
         return Stream.concat(myDirs.stream(), subDirs.stream()).collect(Collectors.toList());
     }
 
     @Override
     public String toString() {
         return name + " " + size;
+    }
+
+    public int doMyStuff(Object o, int input) {
+        if (null == o) {
+            throw new IllegalArgumentException("cannot pass null to my method");
+        }
+
+        if (input > 37) {
+            return 1;
+        }
+        if (input * 3 == 0) {
+            return 0;
+        }
+        if (input <= 0) {
+            return -1;
+        }
+        return 1;
     }
 }
