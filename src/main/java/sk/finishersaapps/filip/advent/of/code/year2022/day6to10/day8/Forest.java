@@ -126,7 +126,7 @@ public class Forest {
                 calculateScenicScore(i, j);
             }
         }
-        Optional<Tree> optional = trees.stream().max((o1, o2) -> o1.getScenicScore() - o2.getScenicScore());
+        Optional<Tree> optional = trees.stream().max(Comparator.comparingInt(Tree::getScenicScore));
         if (optional.isEmpty()) {
             throw new IllegalArgumentException("This should not happen");
         }
@@ -140,7 +140,6 @@ public class Forest {
         int down = lookDown(yPosition, xPosition);
         int scenicScore = left * right * up * down;
         map[yPosition][xPosition].setScenicScore(scenicScore);
-        System.out.println(scenicScore);
     }
 
     private int lookDown(int yPosition, int xPosition) {
